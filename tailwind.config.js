@@ -1,0 +1,62 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        black: {
+          900: "#000000",
+          "900_b2": "#000000b2",
+          "900_90": "#00000090",
+          "900_3f": "#0000003f",
+          "900_75": "#00000075",
+          "900_99": "#00000099",
+        },
+        blue_gray: { 50: "#f1f1f3", 900: "#333333" },
+        light_blue: { 600: "#13a1da" },
+        red: { 400: "#f45a5a" },
+        gray: {
+          50: "#f8f8f8",
+          100: "#f7f7f8",
+          300: "#e5e5e5",
+          500: "#a4a0a0",
+          700: "#585859",
+          800: "#4c4c4c",
+          900: "#262626",
+          "500_01": "#a5a1a1",
+          "300_01": "#e3e3e7",
+          "700_01": "#646467",
+        },
+        green: { 400: "#66f45a" },
+        yellow: { 100: "#ffe9cc", 700: "#f0c932" },
+        deep_orange: { 400: "#fe753f" },
+        purple: { A200: "#c35af4" },
+        orange: {
+          50: "#fff4e5",
+          400: "#ffab2e",
+          A100: "#ffd499",
+          A400: "#ff9400",
+        },
+        blue: { 600: "#2489d3", "600_ab": "#2489d3ab" },
+        white: { A700: "#ffffff" },
+      },
+      fontFamily: {
+        bevietnampro: "Be Vietnam Pro",
+        opensans: "Open Sans",
+        baloobhai: "Baloo Bhai",
+        roboto: "Roboto",
+        outfit: "Outfit",
+      },
+      boxShadow: {
+        bs1: "0px 0px  1px 4px #fff4e5",
+        bs: "0px 4px  4px 0px #0000003f",
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
